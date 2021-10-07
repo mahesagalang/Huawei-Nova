@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Huawei Nova</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&family=Arvo&family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav>
+      <div class="brand-nav">
+        <h1>Nova</h1>
+      </div>
+      <div class="menu-toggle"></div>
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT</a></li>
+        <li><a href="">TEAM</a></li>
+        <li><a href="">GALLERY</a></li>
+        <li><a href="">FEATURES</a></li>
+        <li><a href="">PRICING</a></li>
+        <li><a href="">BLOG</a></li>
+        <li><a href="" style="color: blue">GET STARTED</a></li>
+      </ul>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- header start -->
+    <header>
+      <div id="snow_fall"></div>
+      <div class="left-side">
+        <h1>Start Your Free 14-Day Trial</h1>
+        <p>See how Nova can help you double your business in 12 mounths.</p>
+        <p>Discover how to get more qualified leads & close deals faster.</p>
+        <div class="formulir">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Adress" />
+          <input type="text" placeholder="Number Phone" />
+          <input type="text" placeholder="Business Type" />
+          <button>START MY FREE 14-DAY TRIAL</button>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <img src="img/huawei-phone.png" alt="" />
+      </div>
+    </header>
+
+    <!-- header end -->
+
+    <!-- main start -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#4a17d4"
+        fill-opacity="1"
+        d="M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,208C672,181,768,139,864,144C960,149,1056,203,1152,208C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+      ></path>
+    </svg>
+
+    <main>
+      <article>
+        <h1>How It Works</h1>
+        <p>
+          There are many variations of passages of Lorem ipsum aviable, but the
+          majority have suffered alteration, by injected humour, or on
+          randomised words
+        </p>
+      </article>
+
+      <div class="services">
+        <div class="search-oportunies">
+          <img src="img/search-logo.png" alt="" />
+          <h2>Search Oportunies</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            illum nostrum quidem nemo nam doloribus!
+          </p>
+        </div>
+        <div class="search-oportunies">
+          <img src="img/reach.png" alt="" />
+          <h2>Reach Clients</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            illum nostrum quidem nemo nam doloribus!
+          </p>
+        </div>
+        <div class="search-oportunies">
+          <img src="img/reward.png" alt="" />
+          <h2>Get Rewarded</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            illum nostrum quidem nemo nam doloribus!
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- main end -->
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let menuToggle = document.querySelector(".menu-toggle");
+      let listNavbar = document.querySelector("nav ul");
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+        listNavbar.classList.toggle("active");
+        if (listNavbar.classList.contains("active")) {
+          listNavbar.style.position = "fixed";
+        }
+      });
+    </script>
+  </body>
+</html>
